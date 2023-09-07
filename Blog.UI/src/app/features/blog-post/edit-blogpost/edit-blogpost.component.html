@@ -1,0 +1,91 @@
+<div class="container">
+    <h1 class="mt-3">Add BlogPost</h1>
+
+    <ng-container *ngIf="blogPost; else notFound">
+        <form #form="ngForm" (ngSubmit)="onFormSubmit()">
+            <div class="mt-2 mb-5">
+                <div class="mt-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input [(ngModel)]="blogPost.title" type="text" id="title" name="title" class="form-control" />
+                </div>
+
+                <div class="mt-3">
+                    <label for="urlHandle" class="form-label">Url Handle</label>
+                    <input [(ngModel)]="blogPost.urlHandle" type="text" id="urlHandle" name="urlHandle"
+                        class="form-control" />
+                </div>
+
+                <div class="mt-3">
+                    <label for="shortDescription" class="form-label">Short Description</label>
+                    <input [(ngModel)]="blogPost.shortDescription" type="text" id="shortDescription"
+                        name="shortDescription" class="form-control" />
+                </div>
+
+                <div class="mt-3">
+                    <label for="content" class="form-label">Content</label>
+                    <textarea [(ngModel)]="blogPost.content" id="content" name="content"
+                        class="form-control"></textarea>
+                </div>
+
+                <div class="mt-3">
+                    <label for="featuredImageUrl" class="form-label">Featured Image Url
+                        <button type="button" class="btn btn-light" (click)="openImageSelector()">Select Image</button>
+                    </label>
+                    
+                    <ng-container *ngIf="blogPost.featuredImageUrl != ''">
+                        <div>
+                            <img [src]="blogPost.featuredImageUrl" height="100px" class="mt-2">
+                        </div>
+                    </ng-container>
+    
+                    <input [(ngModel)]="blogPost.featuredImageUrl" type="text" id="featuredImageUrl" name="featuredImageUrl" class="form-control">
+                </div>
+
+                <div class="mt-3">
+                    <label for="publishedDate" class="form-label">Published Date</label>
+                    <input [ngModel]="blogPost.publishedDate | date : 'yyy-MM-dd'" value="{{ blogPost.publishedDate }}"
+                        (ngModelChange)="blogPost.publishedDate = $event" type="date" id="publishedDate"
+                        name="publishedDate" class="form-control" />
+                </div>
+
+                <div class="mt-3">
+                    <label for="author" class="form-label">Author</label>
+                    <input [(ngModel)]="blogPost.author" type="text" id="author" name="author" class="form-control" />
+                </div>
+
+                <div class="form-check mt-3">
+                    <input [(ngModel)]="blogPost.isVisible" class="form-check-input" name="isVisible" type="checkbox"
+                        id="isVisible" />
+                    <label class="form-check-label" for="isVisible"> Is Visible? </label>
+                </div>
+
+                <div class="mt-3">
+                    <label for="categories" class="form-label">Categories</label>
+                    <ng-container *ngIf="categories$ | async as categories">
+                        <select class="form-control" id="categories" name="categories" [(ngModel)]="selectedCategories" multiple>
+                            <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
+                        </select>
+                    </ng-container>
+                </div>
+
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-primary">Save</button>
+
+                    <button type="button" class="btn btn-danger ms-3" (click)="onDelete()">Delete</button>
+
+                </div>
+            </div>
+        </form>
+    </ng-container>
+
+    <ng-template #notFound>
+        <div class="alert alert-warning" role="alert">
+            BlogPost not found.
+        </div>
+    </ng-template>
+</div>
+
+<div class="image-container-model" [ngClass]="{'d-block': isImageSelectorVisible, 'd-none': !isImageSelectorVisible}">
+    <button type="button" class="btn btn-light" style="position: fixed; top: 10px; right: 10px" (click)="closeImageSelector()">X</button>
+    <app-image-selector></app-image-selector>
+</div>
