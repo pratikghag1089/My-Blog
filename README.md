@@ -73,4 +73,3 @@ This project is [MIT](#) licensed.
 ## 📧 Contact
 
 Created by [@pratikghag1089](https://github.com/pratikghag1089) - Feel free to reach out!
-```
