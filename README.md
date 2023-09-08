@@ -33,7 +33,7 @@ Welcome to **My-Blog**, a simple blogging webapp built with popular tech stack t
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/My-Blog.git
+   git clone https://github.com/pratikghag1089/My-Blog.git
 
 2. Navigate to the project directory and install the required packages:
    ```bash
@@ -45,8 +45,8 @@ Welcome to **My-Blog**, a simple blogging webapp built with popular tech stack t
 
 4. Run the migrations to set up the database:
    ```bash
-   dotnet ef migrations add InitialCreate
-   dotnet ef database update
+   Update-Database --Context="ApplicationDbContext" -v
+   Update-Database --Context="AuthDbContext" -v
    ```
 
 5. Start the backend server:
@@ -56,7 +56,6 @@ Welcome to **My-Blog**, a simple blogging webapp built with popular tech stack t
 
 6. Navigate to the Angular project directory and start the frontend server:
    ```bash
-   cd angular-app
    ng serve
    ```
 
