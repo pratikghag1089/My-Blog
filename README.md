@@ -1,4 +1,3 @@
-```markdown
 # My-Blog 📝
 
 Welcome to **My-Blog**, a comprehensive blogging platform built with a robust tech stack to provide an intuitive and secure blogging experience.
@@ -35,7 +34,6 @@ Welcome to **My-Blog**, a comprehensive blogging platform built with a robust te
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/My-Blog.git
-   ```
 
 2. Navigate to the project directory and install the required packages:
    ```bash
