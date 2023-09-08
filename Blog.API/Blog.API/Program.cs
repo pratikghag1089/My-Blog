@@ -41,6 +41,7 @@ namespace Blog.API
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<IBlogPostService, BlogPostService>();
             builder.Services.AddScoped<IImageService, ImageService>();
+            builder.Services.AddScoped<ITokenService, TokenService>();
             #endregion
 
             builder.Services.AddIdentityCore<IdentityUser>()

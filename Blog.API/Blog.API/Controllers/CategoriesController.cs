@@ -3,6 +3,7 @@ using Blog.API.Data;
 using Blog.API.Models.Domains;
 using Blog.API.Models.DTOs;
 using Blog.API.Services.Contract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,7 @@ namespace Blog.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> CreateCategory(CreateCategoryRequestDto createCategoryRequestDto)
         {
             var categoryDto = await _categoryService.CreateAsync(createCategoryRequestDto);
@@ -49,6 +51,7 @@ namespace Blog.API.Controllers
         }
 
         [HttpPut("{id:Guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> EditCategory([FromRoute] Guid id, [FromBody] UpdateCategoryRequestDto updateCategoryRequestDto)
         {
             var categoryDto = await _categoryService.EditAsync(id, updateCategoryRequestDto);
@@ -57,6 +60,7 @@ namespace Blog.API.Controllers
         }
 
         [HttpDelete("{id:Guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> DeleteCategoryById([FromRoute] Guid id)
         {
             var categoryDtos = await _categoryService.DeleteByIdAsync(id);
