@@ -11,6 +11,8 @@ namespace Blog.API.Services.Contract
 
         Task<BlogPostDto> GetByIdAsync(Guid id);
 
+        Task<BlogPostDto> GetByUrlAsync(string urlHandle);
+
         Task<BlogPostDto?> EditAsync(Guid id, UpdateBlogPostRequestDto updateBlogPostRequestDto);
 
         Task<BlogPostDto?> DeleteByIdAsync(Guid id);

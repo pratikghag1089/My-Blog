@@ -45,6 +45,19 @@ namespace Blog.API.Controllers
             return Ok(BlogPostDtos);
         }
 
+        [HttpGet("{urlHandle}")]
+        public async Task<IActionResult> GetBlogPostByUrl([FromRoute] string urlHandle)
+        {
+            var BlogPostDtos = await _BlogPostService.GetByUrlAsync(urlHandle);
+
+            if (BlogPostDtos == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(BlogPostDtos);
+        }
+
         [HttpPut("{id:Guid}")]
         public async Task<IActionResult> EditBlogPost([FromRoute] Guid id, [FromBody] UpdateBlogPostRequestDto updateBlogPostRequestDto)
         {

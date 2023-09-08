@@ -57,6 +57,15 @@ namespace Blog.API.Services.Implementation
             return BlogPostDto;
         }
         
+        public async Task<BlogPostDto> GetByUrlAsync(string urlHandle)
+        {
+            var BlogPost = await _applicationDbContext.BlogPosts.Include(e => e.Categories).FirstOrDefaultAsync(e => e.UrlHandle.ToLower() == urlHandle.ToLower());
+
+            var BlogPostDto = _mapper.Map<BlogPostDto>(BlogPost);
+
+            return BlogPostDto;
+        }
+        
         public async Task<BlogPostDto> EditAsync(Guid id, UpdateBlogPostRequestDto updateBlogPostRequestDto)
         {
             var BlogPost = _mapper.Map<BlogPost>(updateBlogPostRequestDto);

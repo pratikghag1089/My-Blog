@@ -26,6 +26,10 @@ export class BlogPostService {
     return this.http.get<BlogPost>(`${environment.apiBaseUrl}/api/blogPosts/${id}`);
   }
 
+  getBlogPostByUrl(urlHandle: string): Observable<BlogPost> {
+    return this.http.get<BlogPost>(`${environment.apiBaseUrl}/api/blogPosts/${urlHandle}`);
+  }
+
   editBlogPost(id?: string | null, model?: UpdateBlogPostRequest): Observable<BlogPost> {
     return this.http.put<BlogPost>(`${environment.apiBaseUrl}/api/blogPosts/${id}`, model);
   }

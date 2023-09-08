@@ -15,6 +15,8 @@ namespace Blog.API.Profiles
             CreateMap<CreateBlogPostRequestDto, BlogPost>();
             CreateMap<BlogPost, BlogPostDto>().ReverseMap();
             CreateMap<UpdateBlogPostRequestDto, BlogPost>();
+            
+            CreateMap<BlogImageDto, BlogImage>().ReverseMap();
         }
     }
 }
