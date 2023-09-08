@@ -1,6 +1,6 @@
 # My-Blog 📝
 
-Welcome to **My-Blog**, a comprehensive blogging platform built with a robust tech stack to provide an intuitive and secure blogging experience.
+Welcome to **My-Blog**, a simple blogging webapp built with popular tech stack to provide a simple and secure blogging experience. This can be a good starter for someone who wants to learn angular + .net api implementation.
 
 ## 🚀 Tech Stack
 
