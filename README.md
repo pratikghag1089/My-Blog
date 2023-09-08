@@ -68,7 +68,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📄 License
 
-This project is [MIT](#) licensed.
+This project is [MIT](https://github.com/pratikghag1089/My-Blog/blob/d716994602e880885c352cdfb6f38a05f13057d8/LICENSE) licensed.
 
 ## 📧 Contact
 
