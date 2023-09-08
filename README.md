@@ -1,3 +1,4 @@
+```markdown
 # My-Blog 📝
 
 Welcome to **My-Blog**, a comprehensive blogging platform built with a robust tech stack to provide an intuitive and secure blogging experience.
@@ -34,3 +35,44 @@ Welcome to **My-Blog**, a comprehensive blogging platform built with a robust te
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/My-Blog.git
+   ```
+
+2. Navigate to the project directory and install the required packages:
+   ```bash
+   cd My-Blog
+   npm install
+   ```
+
+3. Set up your SQL Server and update the connection string in the `.NET Core API` settings.
+
+4. Run the migrations to set up the database:
+   ```bash
+   dotnet ef migrations add InitialCreate
+   dotnet ef database update
+   ```
+
+5. Start the backend server:
+   ```bash
+   dotnet run
+   ```
+
+6. Navigate to the Angular project directory and start the frontend server:
+   ```bash
+   cd angular-app
+   ng serve
+   ```
+
+7. Visit `http://localhost:4200/` in your browser to access the application.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](#).
+
+## 📄 License
+
+This project is [MIT](#) licensed.
+
+## 📧 Contact
+
+Created by [@pratikghag1089](https://github.com/pratikghag1089) - Feel free to reach out!
+```
