@@ -22,6 +22,10 @@ import { FooterComponent } from './core/footer/footer.component';
 import { BlogDetailsComponent } from './features/public/blog-details/blog-details.component';
 import { LoginComponent } from './features/auth/login/login.component';
 import { AuthInterceptor } from './core/intercepters/auth.interceptor';
+import { BlogHomeComponent } from './features/public/blog-home/blog-home.component';
+import { AboutMeComponent } from './features/public/about-me/about-me.component';
+import { WorksComponent } from './features/public/works/works.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,10 @@ import { AuthInterceptor } from './core/intercepters/auth.interceptor';
     HomeComponent,
     FooterComponent,
     BlogDetailsComponent,
-    LoginComponent
+    LoginComponent,
+    BlogHomeComponent,
+    AboutMeComponent,
+    WorksComponent
   ],
   imports: [
     BrowserModule,

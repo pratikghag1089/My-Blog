@@ -1,5 +1,5 @@
 <div class="container">
-    <h1 class="mt-3">Add BlogPost</h1>
+    <h1 class="mt-3">Edit BlogPost</h1>
 
     <ng-container *ngIf="blogPost; else notFound">
         <form #form="ngForm" (ngSubmit)="onFormSubmit()">
@@ -22,9 +22,18 @@
                 </div>
 
                 <div class="mt-3">
-                    <label for="content" class="form-label">Content</label>
+                    <!-- <label for="content" class="form-label">Content</label>
                     <textarea [(ngModel)]="blogPost.content" id="content" name="content"
                         class="form-control"></textarea>
+                        <label for="content" class="form-label">Content</label> -->
+                    <div class="d-flex flex-row">
+                        <div class="col-6 p-2">
+                            <textarea  [(ngModel)]="blogPost.content" style="height: 350px; max-height: 350px;" id="content" name="content" class="form-control"></textarea>
+                        </div>
+                        <div class="col-6 p-2" style="max-height: 350px; overflow-y: scroll;">
+                            <markdown  [data]="blogPost.content"></markdown>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="mt-3">

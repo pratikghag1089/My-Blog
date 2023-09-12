@@ -10,10 +10,22 @@ import { HomeComponent } from './features/public/home/home.component';
 import { BlogDetailsComponent } from './features/public/blog-details/blog-details.component';
 import { LoginComponent } from './features/auth/login/login.component';
 import { authGuard } from './features/auth/guards/auth.guard';
+import { BlogHomeComponent } from './features/public/blog-home/blog-home.component';
+import { AboutMeComponent } from './features/public/about-me/about-me.component';
+import { WorksComponent } from './features/public/works/works.component';
 
 const routes: Routes = [
   {
     path: '', component: HomeComponent
+  },
+  {
+    path: 'blogs', component: BlogHomeComponent
+  },
+  {
+    path: 'about-me', component: AboutMeComponent
+  },
+  {
+    path: 'works', component: WorksComponent
   },
   {
     path: 'login', component: LoginComponent
@@ -42,7 +54,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

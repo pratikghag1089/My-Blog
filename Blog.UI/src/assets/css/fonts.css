@@ -1,7 +1,7 @@
 /* ----------------------------------------------------------------
-    Fonts
+	Fonts
 
-    Replace your Fonts as necessary
+	Replace your Fonts as necessary
 -----------------------------------------------------------------*/
 
 
@@ -13,20 +13,6 @@ small,
 .skills li .progress-percent .counter,
 .nav-tree ul ul a,
 .font-body,
-.entry-link span,
-.entry blockquote p,
-.more-link,
-.comment-content .comment-author span,
-.comment-content .comment-author span a,
-.button.button-desc span,
-.testi-content p,
-.team-title span,
-.before-heading,
-.wedding-head .first-name span,
-.wedding-head .last-name span,
-.font-secondary { font-family: 'Roboto', sans-serif !important; }
-
-
 h1,
 h2,
 h3,
@@ -47,5 +33,18 @@ label,
 .widget-filter-links li a,
 .nav-tree li a,
 .wedding-head,
-.font-primary { font-family: 'Source Sans Pro', sans-serif !important; }
+.font-primary { font-family: 'Heebo', sans-serif !important; }
 
+
+.entry-link span,
+.entry blockquote p,
+.more-link,
+.comment-content .comment-author span,
+.comment-content .comment-author span a,
+.button.button-desc span,
+.testi-content p,
+.team-title span,
+.before-heading,
+.wedding-head .first-name span,
+.wedding-head .last-name span,
+.font-secondary { font-family: 'PT Serif', serif !important; }
