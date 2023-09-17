@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Personal\\Projects\\Portfolio\\ProgSilo.Blog\\My-Blog\\Blog.API\\Blog.API\\wwwroot\\db\\myblog.db",
+      "PackagePath": "staticwebassets\\db\\myblog.db"
+    },
+    {
+      "Id": "C:\\Personal\\Projects\\Portfolio\\ProgSilo.Blog\\My-Blog\\Blog.API\\Blog.API\\wwwroot\\images\\Fifth image.jpg",
+      "PackagePath": "staticwebassets\\images\\Fifth image.jpg"
+    },
+    {
+      "Id": "C:\\Personal\\Projects\\Portfolio\\ProgSilo.Blog\\My-Blog\\Blog.API\\Blog.API\\wwwroot\\images\\firstImage.jpg",
+      "PackagePath": "staticwebassets\\images\\firstImage.jpg"
+    },
+    {
+      "Id": "C:\\Personal\\Projects\\Portfolio\\ProgSilo.Blog\\My-Blog\\Blog.API\\Blog.API\\wwwroot\\images\\forthimage.png",
+      "PackagePath": "staticwebassets\\images\\forthimage.png"
+    },
+    {
+      "Id": "C:\\Personal\\Projects\\Portfolio\\ProgSilo.Blog\\My-Blog\\Blog.API\\Blog.API\\wwwroot\\images\\robert-brown.png",
+      "PackagePath": "staticwebassets\\images\\robert-brown.png"
+    },
+    {
+      "Id": "C:\\Personal\\Projects\\Portfolio\\ProgSilo.Blog\\My-Blog\\Blog.API\\Blog.API\\wwwroot\\images\\secondImage.jpg",
+      "PackagePath": "staticwebassets\\images\\secondImage.jpg"
+    },
+    {
+      "Id": "C:\\Personal\\Projects\\Portfolio\\ProgSilo.Blog\\My-Blog\\Blog.API\\Blog.API\\wwwroot\\images\\sixth image.jpg",
+      "PackagePath": "staticwebassets\\images\\sixth image.jpg"
+    },
+    {
+      "Id": "C:\\Personal\\Projects\\Portfolio\\ProgSilo.Blog\\My-Blog\\Blog.API\\Blog.API\\wwwroot\\images\\thirdimage.jpg",
+      "PackagePath": "staticwebassets\\images\\thirdimage.jpg"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.Blog.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.Blog.API.props",
+      "PackagePath": "build\\Blog.API.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Blog.API.props",
+      "PackagePath": "buildMultiTargeting\\Blog.API.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.Blog.API.props",
+      "PackagePath": "buildTransitive\\Blog.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

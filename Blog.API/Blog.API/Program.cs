@@ -29,12 +29,14 @@ namespace Blog.API
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("MyBlogConnectionString"));
+                //options.UseSqlServer(builder.Configuration.GetConnectionString("MyBlogConnectionString"));
+                options.UseSqlite(builder.Configuration.GetConnectionString("SQLiteConnection"));
             });
 
             builder.Services.AddDbContext<AuthDbContext>(options =>
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("MyBlogConnectionString"));
+                //options.UseSqlServer(builder.Configuration.GetConnectionString("MyBlogConnectionString"));
+                options.UseSqlite(builder.Configuration.GetConnectionString("SQLiteConnection"));
             });
 
             #region Services
@@ -80,11 +82,14 @@ namespace Blog.API
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            //if (app.Environment.IsDevelopment())
+            //{
+            //    app.UseSwagger();
+            //    app.UseSwaggerUI();
+            //}
+
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             app.UseHttpsRedirection();
 
@@ -100,7 +105,7 @@ namespace Blog.API
 
             app.UseStaticFiles(new StaticFileOptions
             {
-                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "images")),
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images")),
                 RequestPath = "/images"
             });
 

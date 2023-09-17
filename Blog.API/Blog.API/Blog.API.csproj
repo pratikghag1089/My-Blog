@@ -11,6 +11,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10">
       <PrivateAssets>all</PrivateAssets>
@@ -19,6 +20,21 @@
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.32.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.32.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\db\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\Fifth image.jpg" />
+    <None Include="wwwroot\images\firstImage.jpg" />
+    <None Include="wwwroot\images\forthimage.png" />
+    <None Include="wwwroot\images\robert-brown.png" />
+    <None Include="wwwroot\images\secondImage.jpg" />
+    <None Include="wwwroot\images\sixth image.jpg" />
+    <None Include="wwwroot\images\thirdimage.jpg" />
   </ItemGroup>
 
 </Project>

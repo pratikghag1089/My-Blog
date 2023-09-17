@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAi8gInQ00yESJ3rhF/YmbrwAAAAACAAAAAAAQZgAAAAEAACAAAACsAhAmcmq0cdYL4qfzpPdVAZ37QPTdBAuooJRDtHGUIwAAAAAOgAAAAAIAACAAAAA6ORxsz07u0/Rk2Q54gciEQrvW8IAw2biCJepo1Ldj+4AAAAC2GMQX4cb1AKH+Q0G0e+EgHzxIxacamY/qj2sEAWM6EUAZFuUwxPcypV4lyWFSnZ5lVCeX2f96jGmmc78vbSVoF151aRpWN5FNrwF6Hyq5OHciIkGXrDwMoWpF127o64YP/1jANlI6yJHubXmsqJbw66Ps79SL/IK56TFgO/CFe0AAAAAsd2efmfUm2rlfRnBVpkOaHDvWBaa6ytC7/f+XxxwZRBdP1JxHzoaFNiTbm4HlvCHWXzo4Bnpgbs7YrwLY401w</EncryptedPassword>
+    <History>True|2023-09-13T10:40:30.1310087Z;True|2023-09-13T00:34:22.4236416+05:30;True|2023-09-13T00:17:20.7133934+05:30;True|2023-09-12T23:54:18.2017948+05:30;True|2023-09-12T23:45:21.7869533+05:30;True|2023-09-12T23:37:40.7465134+05:30;True|2023-09-12T23:17:17.8024016+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="SQLiteConnection">
+      <Value>Server=ATOM-PG\PSLOCAL%3bDatabase=ProgSiloBlogDb%3bTrustServerCertificate=True%3bTrusted_Connection=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

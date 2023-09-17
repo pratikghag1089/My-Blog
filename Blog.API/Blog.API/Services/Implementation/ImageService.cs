@@ -35,7 +35,7 @@ namespace Blog.API.Services.Implementation
                 DateCreated = DateTime.UtcNow,
             };
 
-            var localPath = Path.Combine(_webHostEnvironment.ContentRootPath, "images", $"{blogImage.FileName}{blogImage.FileExtension}");
+            var localPath = Path.Combine(_webHostEnvironment.ContentRootPath, "wwwroot/images", $"{blogImage.FileName}{blogImage.FileExtension}");
 
             using (var stream = new FileStream(localPath, FileMode.Create))
             {
